@@ -2,16 +2,27 @@
     background-color: $background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: $desktop - 1) {
+        text-align: center;
+    }
 }
 
-.flexbox {
-    display: flex;
-    align-items: baseline;
+.flex-container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1){
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
+
 
 .footer-address {
-   display: inline-block;
-   max-width: 270px;
+   text-align: center;
 }
 
 .footer-contacts {
@@ -21,6 +32,12 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+
+    @media screen and (max-width: $desktop - 1) {
+         margin-bottom: 60px;
+    }
+   
+
 }
 
 .footer-contacts__address {
@@ -37,12 +54,13 @@
 
 .footer-contacts__link{
     display: inline-block;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
-    color: $primery-white-color;
+    color: $secondary-text-color;
 
     &:hover, 
     &:focus {
@@ -55,7 +73,13 @@
 }
 
 .footer-network {
-    margin-left: 70px;
+    @media screen and (max-width: $tablet - 1){
+        margin-bottom: 60px;
+    }
+
+    @include for-size(desktop) {
+        margin-left: 70px;
+    }
 }
 
 .footer-network__text {
@@ -71,8 +95,12 @@
     color: $primery-white-color;
 }
 
+
+
 .footer-subscribe {
-    margin-left: 93px;
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
 .footer-subscribe__text {
@@ -86,13 +114,19 @@
 }
 
 .footer-subscribe__form {
-    display: flex;
-    align-items: center;
     margin-top: 15px;
+
+    @include for-size(desktop) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
+
+
 .footer-subscribe__input {
-    width: 358px;
+    width: 100%;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -101,8 +135,28 @@
     font-size: 16px;
     color: $secondary-text-color;;
     background-color: $background-color;
+
+    @include for-size(tablet) {
+        width: 450px;
+    }
+
+    @include for-size(desktop) {
+        width: 358px;
+    }
 }
 
+.footer-button {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @include for-size(desktop) {
+        margin-left: 12px;
+        margin-top: 0;
+    }
+   
+}
 .footer-subscribe__icon {
     margin-left: 10px;
     width: 24px;
