@@ -625,8 +625,15 @@ summary {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -634,9 +641,20 @@ summary {
   margin-bottom: 50px;
   color: #212121;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 30px;
+  line-height: 1.18;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }
 
 .section--grey {
