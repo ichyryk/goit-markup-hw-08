@@ -1,0 +1,20 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    
+    @include for-size(mobile) {
+        width: $mobile;
+    }
+
+    @include for-size(tablet) {
+        width: $tablet;
+    }
+
+    @include for-size(desktop) {
+        width: $desktop;
+    }
+
+}

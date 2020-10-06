@@ -1,0 +1,39 @@
+.network-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.network-list__item:not(:last-child) {
+       margin-right: 10px;
+    }
+
+.network-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $icon-color;
+    background-color: $background-icon-color;
+
+    transition: background-color $duration $timing-function,
+     fill $duration $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $primery-white-color;
+}
+}
+
+.network-list__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.network-list__link--white {
+    fill: $primery-white-color;
+ }

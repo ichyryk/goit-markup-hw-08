@@ -1,0 +1,48 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $background-hero;
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 360px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.62;
+    text-transform: uppercase;
+
+    color: $primery-white-color;
+
+    @include for-size(desktop) {
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        letter-spacing: 0.06em;
+        line-height: 1.36;
+        text-transform: uppercase;
+        
+    }
+}

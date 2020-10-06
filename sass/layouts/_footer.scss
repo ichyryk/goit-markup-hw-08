@@ -1,0 +1,111 @@
+.footer{
+    background-color: $background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+   display: inline-block;
+   max-width: 270px;
+}
+
+.footer-contacts {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-contacts__address {
+    margin: 0;
+    color: $primery-white-color;
+}
+.footer-contacts__list {
+    padding: 0;
+    margin-top: 9px;
+}
+.footer-contacts__link {
+    transition: $duration $timing-function;
+}
+
+.footer-contacts__link{
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: $primery-white-color;
+
+    &:hover, 
+    &:focus {
+        color: $accent-color;
+    }
+} 
+
+.phone {
+    margin-top: 9px;
+}
+
+.footer-network {
+    margin-left: 70px;
+}
+
+.footer-network__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primery-white-color;
+}
+
+.footer-subscribe {
+    margin-left: 93px;
+}
+
+.footer-subscribe__text {
+    margin: 0;
+    color: $primery-white-color;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-subscribe__form {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer-subscribe__input {
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    color: $secondary-text-color;;
+    background-color: $background-color;
+}
+
+.footer-subscribe__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px; 
+    fill: $primery-white-color;
+}

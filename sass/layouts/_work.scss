@@ -1,0 +1,51 @@
+.work {
+    display: none;
+
+    @include for-size(desktop) {
+        display: block;
+    }
+
+//      @media screen and (max-width:1199px) {
+//     display: none;
+//   }
+}
+
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-list__item {
+    width: calc((100% - 30px * 2)/3);
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.work-list__box {
+    position: relative;
+}
+
+.work-list__title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primery-white-color;
+    position: absolute;
+    width: 370px;
+    padding: 27px;
+    background-color: $background-hero;
+}
+
+.work-list__text {
+    margin: 0;
+}

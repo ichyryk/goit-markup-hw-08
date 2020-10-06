@@ -1,0 +1,21 @@
+@mixin for-size($range) {
+ 
+  @if $range == mobile-only {
+    @media (max-width: #{$mobile - 1}) { @content; }
+  } @else if $range == mobile {
+    @media (min-width: $mobile) { @content; }
+  } @else if $range == tablet {
+    @media (min-width: $tablet) { @content; }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) { @content; }
+  } 
+}
+
+// // usage
+// .my-box {
+//   padding: 10px;
+  
+//   @include for-size(desktop-up) {
+//     padding: 20px;
+//   }
+// }
