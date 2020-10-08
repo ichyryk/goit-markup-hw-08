@@ -3,9 +3,8 @@
     top: 50%;
     left: 50%;
 
-    padding: 40px 0;;
-    width: 528px;
-    height: 581px;
+    padding: 40px;
+    width: 100%;
 
     background: $primery-white-color;
     box-shadow: 0px 1px 3px $box-shadow-color, 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,13 +12,29 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform $duration $timing-function;
+
+    @include for-size(mobile) {
+        max-width: 450px;
+    }
+
+  @include for-size(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @include for-size(desktop) {
+    max-width: 528px;
+  }
 }
+
 
 .modal__text {
     display: block;
     margin-bottom: 12px;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
 }
 
