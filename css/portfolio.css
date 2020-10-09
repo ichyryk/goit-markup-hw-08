@@ -905,6 +905,12 @@ ul {
 
 @media screen and (max-width: 450px) {
   .portfolio-card__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 250px;
     height: 140px;
     font-size: 16px;

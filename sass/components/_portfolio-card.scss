@@ -66,6 +66,8 @@ transition: $duration $timing-function;
    transition: $duration $timing-function;
 
    @media screen and (max-width: 450px) {
+     display: flex;
+      align-items: center;
       width: 250px;
       height: 140px;
       font-size: 16px;
